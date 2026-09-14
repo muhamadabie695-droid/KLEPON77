@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLEPON77</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff7ef;
+            color: #3d2418;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #14532d;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #ffd84d;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffd84d;
+        }
+
+        /* BERANDA */
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: #ffd84d;
+        }
+
+        .hero .emoji {
+            font-size: 65px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin: 15px 0;
+            color: #14532d;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            border: none;
+            padding: 14px 28px;
+            background: #14532d;
+            color: white;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #267442;
+        }
+
+        /* MENU */
+        .menu {
+            padding: 60px 8%;
+        }
+
+        .menu h2 {
+            text-align: center;
+            color: #14532d;
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.12);
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card .emoji {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .harga {
+            color: #e49b00;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* TENTANG */
+        .tentang {
+            background: #14532d;
+            color: white;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        .tentang h2 {
+            color: #ffd84d;
+            margin-bottom: 15px;
+        }
+
+        .tentang p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        /* KONTAK */
+        .kontak {
+            text-align: center;
+            padding: 55px 20px;
+            background: #fff0c9;
+        }
+
+        .kontak h2 {
+            color: #14532d;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .kontak p {
+            margin: 12px;
+            font-size: 17px;
+        }
+
+        .wa {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 14px 28px;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .wa:hover {
+            background: #1da851;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #092b18;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        footer span {
+            color: #ffd84d;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">🍃 <span>KLEPON</span>77</div>
+
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+
+        <div class="emoji">🍡</div>
+
+        <h1>KLEPON77</h1>
+
+        <p>
+            Klepon tradisional dengan rasa manis,
+            lembut, dan nikmat.
+        </p>
+
+        <button class="btn" onclick="pesanSekarang()">
+            Pesan Sekarang
+        </button>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+
+        <h2>🍡 MENU KLEPON77 🍡</h2>
+
+        <div class="menu-container">
+
+            <div class="card">
+                <div class="emoji">🟢</div>
+                <h3>Klepon Original</h3>
+                <div class="harga">Rp10.000</div>
+                <p>
+                    Klepon lembut dengan isian gula merah
+                    dan taburan kelapa.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="emoji">🥥</div>
+                <h3>Klepon Kelapa</h3>
+                <div class="harga">Rp12.000</div>
+                <p>
+                    Klepon dengan kelapa parut
+                    yang gurih dan nikmat.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="emoji">🍫</div>
+                <h3>Klepon Cokelat</h3>
+                <div class="harga">Rp13.000</div>
+                <p>
+                    Klepon lembut dengan perpaduan
+                    rasa cokelat yang manis.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="emoji">🟣</div>
+                <h3>Klepon Ubi Ungu</h3>
+                <div class="harga">Rp13.000</div>
+                <p>
+                    Klepon berbahan ubi ungu
+                    dengan rasa khas dan lembut.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TENTANG -->
+    <section class="tentang" id="tentang">
+
+        <h2>🍃 Tentang KLEPON77</h2>
+
+        <p>
+            KLEPON77 adalah usaha makanan yang
+            menghadirkan klepon dengan cita rasa
+            tradisional dan berbagai pilihan rasa.
+            Kami menggunakan bahan berkualitas
+            untuk menghasilkan klepon yang lezat.
+        </p>
+
+    </section>
+
+
+    <!-- KONTAK -->
+    <section class="kontak" id="kontak">
+
+        <h2>📞 Hubungi KLEPON77</h2>
+
+        <p>
+            📍 <b>CO/Alamat:</b>
+            Jl. Penjajahan no 14
+        </p>
+
+        <p>
+            📱 <b>WhatsApp:</b>
+            085143882102
+        </p>
+
+        <a
+            class="wa"
+            href="https://wa.me/085143882102"
+            target="_blank">
+            💬 Pesan via WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 <span>KLEPON77</span>
+            | Manisnya Bikin Nagih 🍡
+        </p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function pesanSekarang() {
+
+            let nama = prompt("Masukkan nama Anda:");
+
+            if (nama) {
+
+                alert(
+                    "Halo " + nama +
+                    "! Silakan klik tombol WhatsApp " +
+                    "untuk melakukan pemesanan."
+                );
+
+                document.getElementById("kontak")
+                    .scrollIntoView({
+                        behavior: "smooth"
+                    });
+            }
+        }
+
+    </script>
+
+</body>
+</html>
